@@ -3,10 +3,10 @@ import RequestsDisplay from "./components/RequestsDisplay";
 
 function App() {
   const socket = io.connect(
-    process.env.REACT_APP_CALL_MONITORING_WEB_SOCKET_LINK
+    "https://callmonitoringwebsocket.onrender.com"
   );
 
-  socket.emit("join", process.env.REACT_APP_PRIVATE_WS_ROOM);
+  socket.emit("join", "productionApp");
 
   return (
     <div>
