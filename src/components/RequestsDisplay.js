@@ -18,9 +18,9 @@ const RequestsDisplay = ({ socket }) => {
         console.log(requests);
         return (
           <h1 key={index}>
-            {request.Number}
-            {request.Call_Received_ON}
-            {request.CLient}
+            CALL_RECEIVED_ON: {request.CALL_RECEIVED_ON}
+            Restaurant_Name: {request.Restaurant_Name}
+            Customer_ph_no: {request.Customer_ph_no}
           </h1>
         );
       })}
