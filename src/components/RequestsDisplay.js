@@ -5,7 +5,8 @@ const RequestsDisplay = ({ socket }) => {
   const [requests, setRequests] = useState([]);
   const [wsConnected, setWSConnected] = useState(false);
 
-  const PRIVATE_WS_ROOM = "123abc";
+  const PRIVATE_WS_ROOM = "productionApp";
+
   socket.emit("join", PRIVATE_WS_ROOM);
 
   useEffect(() => {
