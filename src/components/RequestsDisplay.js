@@ -5,6 +5,7 @@ const RequestsDisplay = ({ socket }) => {
 
   useEffect(() => {
     socket.on("requestResponse", (data) => {
+      console.log("Data Received");
       console.log(data, " request received in display");
       let newRequests = (requests) => [...requests, data];
       setRequests(newRequests);
